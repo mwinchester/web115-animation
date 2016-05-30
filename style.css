@@ -83,13 +83,14 @@ code {
   font-size: 1.1em; }
 
 .mycode {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   color: #346928;
   width: 75%;
   margin: 10px auto;
   box-shadow: 3px 3px 2px #4f8f04;
   padding: 15px;
   border-radius: 20px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  font-weight: 500; }
 
 /*# sourceMappingURL=style.css.map */
