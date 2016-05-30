@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #2d2f38;
+  font-family: arial, Helvetica, sans-serif; }
+
+.container-fluid {
+  width: 100%;
+  margin: 15px 0;
+  min-height: 40px;
+  background: antiquewhite;
+  box-shadow: 3px 3px 2px #8f2204; }
+
+.container {
+  max-width: 1060px;
+  min-height: 50px;
+  background: antiquewhite;
+  border: 2px solid #5c0c22;
+  box-shadow: 3px 3px 2px #8f2204;
+  font: #2d2f38;
+  border-radius: 10px;
+  margin: 15px auto; }
+
+h1, h2, h3, h4, h5 {
+  color: #5c0c22;
+  text-align: center;
+  padding: 5px; }
+
+p {
+  padding: 5px 10px;
+  color: #2d2f38;
+  font-size: 1.2em;
+  font-weight: 300; }
+
+a {
+  color: #346928;
+  text-decoration: none;
+  font-weight: 600; }
+
+a:hover {
+  text-decoration: underline;
+  color: #4f8f04; }
+
+a:visited {
+  color: #4f8f04;
+  font-weight: 300; }
+
+#motion {
+  min-height: 500px; }
+
+#heart {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 200px;
+  -webkit-animation-name: heart-move;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;
+  /* Chrome, Safari, Opera */
+  animation-name: heart-move;
+  animation-duration: 6s; }
+
+@keyframes heart-move {
+  0% {
+    left: 200px;
+    top: 0px; }
+  25% {
+    left: 500px;
+    top: 0px; }
+  50% {
+    left: 500px;
+    top: 200px; }
+  75% {
+    left: 200px;
+    top: 200px; }
+  100% {
+    left: 200px;
+    top: 0px; } }
+code {
+  font-weight: 500;
+  font-size: 1.1em; }
+
+.mycode {
+  background: rgba(255, 255, 255, 0.7);
+  color: #346928;
+  width: 75%;
+  margin: 10px auto;
+  box-shadow: 3px 3px 2px #4f8f04;
+  padding: 15px;
+  border-radius: 20px;
+  margin-top: 50px; }
+
+/*# sourceMappingURL=style.css.map */

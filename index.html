@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expirimenting with CSS Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="container-fluid">
+    <h1>Exploring CSS Animation</h1>
+</header>
+<div class="container">
+    <h2>Why use CSS for animation?</h2>
+    <p>The first animations on the web were Animated Gifs. They allowed
+    animation by having multiple images change on the screen, creating an
+    animation in the style of an old flip book. These still work, and you 
+    will see them on the web.</p>
+    <p>The next major player in web animation was Macromedia (later Adobe) Flash.
+    Flash used scalable vector graphics to produce animations. At one time 
+    98% of web accessible devices worked with Flash.</p>
+    <p>Then the mobile revolution happened, and mobile devices quit supporting
+    Flash. A better way to animate, that would work with web standards, needed 
+    to develop.</p>
+    <p>Now you can create simple animations with CSS3. For more advanced
+    animation techniques, you will need to learn JavaScript.</p>
+    
+    <p>For a more complete reference, with examples, please see:
+        <a href="http://www.w3schools.com/css/css3_animations.asp" target =_blank>
+        W3Schools CSS3 Animations</a></p>
+    </a>
+</div>
+<div class="container" id="motion">
+    <h2>Animating a Div to move</h2>
+    <p>The heart image is inside the div, so by moving the div, we animate the heart. The div has 
+    an id="heart" so that we can specify exactly what we want to animate.</p>
+
+    <div id="heart"><img src="heart.png" alt="cartoon heart"></div>
+    <p>The code looks like this:</p>
+    <div class="mycode">
+    <code>
+        #heart{ <br>
+        width: 300px;<br>
+        height: 300px;<br>
+        position: relative;<br>
+        left:200px;<br>
+        -webkit-animation-name: heart-move; /* Chrome, Safari, Opera */<br>
+        -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */<br>
+        animation-name: heart-move;<br>
+        animation-duration: 6s;<br>
+        }<br>
+        <br>
+        @keyframes heart-move {<br>
+        0%   {left:200px; top:0px;}<br>
+        25%  {left:500px; top:0px;}<br>
+        50%  {left:500px; top:200px;}<br>
+        75%  {left:200px; top:200px;}<br>
+        100% {left:200px; top:0px;}<br>
+        }<br>
+
+    </code></div>
+        <p>You can also change how many times the animation will loop, delay start, colors, etc. Please
+        check out the W3schools site for a full reference.</p>
+
+</div>
+
+</body>
+</html>
